@@ -11,7 +11,7 @@ const PromptList = () => {
   useEffect(() => {
     const fetchPrompts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/prompts'); // Use Axios for the request
+        const response = await axios.get('https://leaderhubassignment.onrender.com/api/prompts'); // Use Axios for the request
         setPrompts(response.data); // Axios automatically parses JSON
       } catch (err) {
         setError(err.response?.data?.error || 'Error fetching prompts');

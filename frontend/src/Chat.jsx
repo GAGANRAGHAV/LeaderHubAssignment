@@ -28,7 +28,7 @@ const ChatInterface = () => {
       setResponse(aiResponse);
 
       // Send the prompt and AI response to your server (optional)
-      await axios.post('http://localhost:5000/api/prompts', { prompt, response: aiResponse });
+      await axios.post('https://leaderhubassignment.onrender.com/api/prompts', { prompt, response: aiResponse });
 
     } catch (error) {
       console.error('Error generating content:', error);
