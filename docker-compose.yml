@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb+srv://gaganraghav143:QWFap0JKVaKHd3rG@cluster0.r3vrw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    
+
